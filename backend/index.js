@@ -7,7 +7,7 @@ const axios = require('axios');
 const app = express();
 const cors = require('cors');
 
-const NASA_API_KEY = process.env.REACT_APP_NASA_API_KEY;
+const NASA_API_KEY = process.env.NASA_API_KEY;
 
 app.use(cors());
 
