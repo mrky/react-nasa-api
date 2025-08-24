@@ -11,7 +11,7 @@ export default function Sidebar(props) {
      */
     function formatCopyright(copyright) {
         return copyright;
-        
+
         copyright = copyright.trim();
 
         // Fixes cases like " / \n", ", \n", "\n"
@@ -39,7 +39,7 @@ export default function Sidebar(props) {
                 <p className='overflow-auto pe-3 mb-0'>{data?.explanation}</p>
                 {displayHdUrl()}
                 {formattedCopyright && <h6 className="fw-normal wrap-break-word" title={"Picture Copyright " + formattedCopyright}><i className="fa-regular fa-copyright opacity-90"></i> {formattedCopyright}</h6>}
-                <button className="mt-auto" onClick={handleToggleModal}>
+                <button className="mt-auto" title="Close" onClick={handleToggleModal}>
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
