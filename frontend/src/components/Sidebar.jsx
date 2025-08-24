@@ -26,7 +26,7 @@ export default function Sidebar(props) {
      */
     function displayHdUrl() {
         if (data.hdurl && data.url && data.hdurl !== data.url) {
-            return <a href={data.hdurl} target='_blank'>HD version</a>;
+            return <a href={data.hdurl} target='_blank' rel='noreferrer'>HD version</a>;
         }
     }
 
