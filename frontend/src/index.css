@@ -43,18 +43,6 @@ a {
   object-fit: contain;
 }
 
-footer {
-  align-items: center;
-  bottom: 0;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  left: 0;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-}
-
 footer button {
   background: transparent;
   border: none;
