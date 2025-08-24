@@ -104,8 +104,8 @@ export default function Apod() {
                             // to a mpg (video) file even though the media type was set to image. The video also wouldn't
                             // load in the iframe because the URL pointed to NASA's API
                             data.media_type === 'image'
-                                ? <img src={data.url} alt={data.title || 'bg-img'} className="apod-bg-image" />
-                                : <iframe src={data.url} className="h-100 w-100"></iframe>
+                                ? <img src={data.url} alt={data.title || "An out of this world image"} className="apod-bg-image" />
+                                : <iframe src={data.url} className="h-100 w-100" title={data.title || "An out of this world video"}></iframe>
                         }
 
                     </div>
