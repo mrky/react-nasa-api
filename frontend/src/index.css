@@ -3,7 +3,7 @@
   --text-primary: #EFF1ED;
   --accent: #05F140;
 
-  font-family: "Noto Sans", system-ui, "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Public Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -126,6 +126,7 @@ h5,
 h6,
 .font-orbitron {
   font-family: "Orbitron", system-ui;
+  letter-spacing: 1.5px;
 }
 
 @media (min-width: 640px) {

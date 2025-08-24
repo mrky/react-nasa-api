@@ -34,7 +34,7 @@ export default function Sidebar(props) {
         <div className="d-flex flex-column sidebar">
             <div onClick={handleToggleModal} className="bg-overlay"></div>
             <div className="py-4 sidebar-content overflow-hidden">
-                <h2 className='fs-4 fw-normal'>{data?.title}</h2>
+                <h2 className='fs-5 fw-normal'>{data?.title}</h2>
                 <h3 className="fs-6 fw-normal">{formatDate(data?.date)}</h3>
                 <p className='overflow-auto pe-3 mb-0'>{data?.explanation}</p>
                 {displayHdUrl()}
