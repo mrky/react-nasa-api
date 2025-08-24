@@ -12,8 +12,6 @@ const NASA_API_KEY = process.env.NASA_API_KEY;
 app.use(cors());
 
 app.get('/apod', (req, res) => {
-    console.log('req q ', req.query);
-    console.log('req p ', req.params);
     const getRandom = req.query.random;
     let nasaUrl = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`;
 
