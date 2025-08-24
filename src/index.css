@@ -1,10 +1,14 @@
 :root {
+  --bg-primary: #070707;
+  --text-primary: #EFF1ED;
+  --accent: #05F140;
+
   font-family: "Noto Sans", system-ui, "Avenir", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color: white;
-  background-color: #030615;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,6 +26,10 @@ body {
   background-color: inherit;
   color: inherit;
   font-family: inherit;
+}
+
+a {
+  color: var(--accent);
 }
 
 .apod-media-container {
@@ -50,7 +58,7 @@ footer {
 footer button {
   background: transparent;
   border: none;
-  color: white;
+  color: var(--text-primary);
   outline: none;
   padding: 1rem;
   transition-duration: 200ms;
@@ -62,7 +70,7 @@ footer button:hover,
 }
 
 footer.apod-footer {
-  background: linear-gradient(to top, #030615, rgba(255, 255, 255, 0));
+  background: linear-gradient(to top, var(--bg-primary), rgba(255, 255, 255, 0));
 }
 
 .sidebar {
@@ -72,14 +80,14 @@ footer.apod-footer {
 }
 
 .bg-overlay {
-  background: #030615;
+  background: var(--bg-primary);
   inset: 0;
   opacity: 0.6;
   position: absolute;
 }
 
 .sidebar-content {
-  background: #030615;
+  background: var(--bg-primary);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -104,7 +112,7 @@ footer.apod-footer {
 .sidebar-content button {
   background: transparent;
   border: none;
-  color: white;
+  color: var(--text-primary);
   margin-right: auto;
   outline: none;
   transition-duration: 200ms;
@@ -122,7 +130,7 @@ h6,
 
 @media (min-width: 640px) {
   .sidebar {
-    box-shadow: 0 0 40px 1px #030615;
+    box-shadow: 0 0 40px 1px var(--bg-primary);
     inset: unset;
     max-height: 100vh;
     min-width: 30%;
