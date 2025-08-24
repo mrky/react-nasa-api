@@ -8,5 +8,5 @@ There is a loading screen while content is being loaded, and an error message
 with a retry button when an error is encountered.
 
 #### .env
-Ensure you have a `NASA_API_KEY` environment variable that points a 
+Ensure you have a `.env` file in the root of the `backend` folder with a `NASA_API_KEY` environment variable that points a 
 valid API token, in order to run the application
