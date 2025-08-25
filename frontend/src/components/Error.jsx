@@ -2,7 +2,7 @@ export default function Loading(props) {
     const { message, retry } = props;
 
     return (
-        <div className="d-flex flex-column align-items-center justify-content-center m-auto">
+        <div className="d-flex flex-column align-items-center justify-content-center m-auto p-3">
             <div className="mb-3">
                 <i className="fa-regular fa-face-frown fa-3x"></i>
             </div>
