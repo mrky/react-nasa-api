@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import Error from "./Error";
 
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8080/";
+
 export default function Apod() {
     const [data, setData] = useState(null);
     const [error, setError] = useState(false);
@@ -43,7 +45,7 @@ export default function Apod() {
         localStorage.clear();
 
         try {
-            const res = await fetch("http://localhost:8080/apod");
+            const res = await fetch(`${BACKEND_URL}apod`);
             console.log("today's pic res", res);
 
             if (!res.ok) {
@@ -76,7 +78,7 @@ export default function Apod() {
 
         try {
             console.log('fetching random pic from the url');
-            const res = await fetch("http://localhost:8080/apod?random=1");
+            const res = await fetch(`${BACKEND_URL}apod?random=1`);
 
             if (!res.ok) {
                 throw new Error("Error getting random picture");

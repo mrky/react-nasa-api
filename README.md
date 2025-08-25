@@ -28,8 +28,10 @@ Run `npm run build`
 Run `node index.js`
 
 #### .env
-Ensure you have a `.env` file in the root of the `backend` folder with a `NASA_API_KEY` environment variable that points a 
-valid API token, in order to run the application
+Ensure you have a `.env` file in the root of the `backend` folder with a `NASA_API_KEY` environment variable that points to a valid API token, in order to run the application.
+
+You will also need a `.env` file in the root of the `frontend` with a `REACT_APP_BACKEND_URL` environment variable that points to where the backend code is running. 
 
 ### Give it a try
-Click [here](https://react-nasa-api-mrky.netlify.app/e) to view the project in action
+Both the backend and frontend have been deployed using Vercel.
+Click [here](https://react-nasa-api-frontend.vercel.app/) to view the project in action
