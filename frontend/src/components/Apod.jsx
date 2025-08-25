@@ -33,7 +33,6 @@ export default function Apod() {
 
         const today = new Date().toDateString();
         const todaysPicKey = `nasa-apod-${today}`;
-        console.log({todaysPicKey})
 
         if (localStorage.getItem(todaysPicKey)) {
             const apiData = JSON.parse(localStorage.getItem(todaysPicKey));
@@ -46,7 +45,6 @@ export default function Apod() {
 
         try {
             const res = await fetch(`${BACKEND_URL}apod`);
-            console.log("today's pic res", res);
 
             if (!res.ok) {
                 throw new Error("Error getting today's picture");
@@ -77,7 +75,6 @@ export default function Apod() {
         setError(false);
 
         try {
-            console.log('fetching random pic from the url');
             const res = await fetch(`${BACKEND_URL}apod?random=1`);
 
             if (!res.ok) {
